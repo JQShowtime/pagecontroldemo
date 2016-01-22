@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIScrollViewDelegate>
 
+@property (strong, nonatomic) UIScrollView *myScrollView;
+@property (strong, nonatomic) UIPageControl *myPageControl;
+
+@property (strong, nonatomic) NSMutableArray *imageArray;
+@property (strong, nonatomic) NSTimer *myTimer;
 
 @end
 
